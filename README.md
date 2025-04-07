@@ -1,12 +1,96 @@
-# React + Vite
+# Blockchain Integration with Wallet Connect
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates how to integrate blockchain functionality in a React application using Vite. The main features include wallet connection, sending amounts to a wallet address, and querying blockchain data.
 
-Currently, two official plugins are available:
+## Features
+- Blockchain integration with wallet connection
+- Send funds to a specific wallet address
+- React frontend with state management
+- Bootstrap and React Router for styling and navigation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup Instructions
 
-## Expanding the ESLint configuration
+Follow the steps below to set up and run the project:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. **Clone the Repository**
+
+### 2. **Set Up the Project**
+npm create vite@latest my-project --template react
+cd my-project
+
+### 3. **Install Dependencies**
+
+# Install Wagmi and related packages
+npm install wagmi @wagmi/core @web3modal/wagmi viem
+
+# Install React Query for data fetching and state management
+npm install @tanstack/react-query
+
+# Install axios for HTTP requests
+npm install axios
+
+# Install Bootstrap for styling
+npm install bootstrap
+
+# Install FontAwesome for icons
+npm install fontawesome
+
+# Install React-Bootstrap for Bootstrap components
+npm install react-bootstrap
+
+# Install Redux for state management
+npm install react-redux
+
+# Install React Router for routing
+npm install react-router-dom
+
+# Install react-simple-timestamp-to-date for timestamp conversion
+npm install react-simple-timestamp-to-date
+
+# Install Web3 for blockchain interactions
+npm install web3
+
+
+### 3. **Environment Setup**
+
+API keys and Project IDs: You will need an API key from Web3Modal and a Web3 provider setup to interact with blockchain networks.
+
+Obtain your Web3Modal project ID from Web3Modal.
+
+Set it in your .env or in your Web3 config files.
+
+### 4. **Running the Project**
+npm run dev
+
+### 5. **Technologies Used**
+
+React — JavaScript library for building user interfaces.
+
+Vite — Next-generation, fast build tool for frontend development.
+
+Web3Modal — Provides wallet connection modals for easy blockchain interaction.
+
+wagmi — Provides hooks for interacting with Ethereum and other blockchain networks.
+
+Bootstrap — CSS framework for responsive design.
+
+axios — Promise-based HTTP client for making API requests.
+
+FontAwesome — Icons for UI elements.
+
+React-Bootstrap — Bootstrap components for React.
+
+React-Redux — For state management across components.
+
+Web3.js — To interact with the blockchain.
+
+### 6. **Features**
+
+**Wallet Connect**
+We use the Web3Modal library to allow users to connect their wallets (like MetaMask or WalletConnect) to the app. Upon successful connection, users can interact with the blockchain, send transactions, and read data.
+
+**Sending Amount to Wallet Address**
+Once the user is connected to their wallet, the application allows them to send funds to any specified wallet address. This is done via the Web3 interaction.
+
+**Blockchain Integration**
+Using wagmi and web3.js, the app communicates with the blockchain network (e.g., Ethereum) to send and receive transactions. The app uses Web3Modal to open wallet connection modals and send transactions.
