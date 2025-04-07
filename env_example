@@ -1,6 +1,4 @@
-# Network Chain Id
-
-VITE_ChainId=11155111 
+VITE_ChainId=123456458 
 
 VITE_WALLETCONECT_PROJECTID=""
 
