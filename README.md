@@ -20,7 +20,36 @@ cd my-project
 
 ### 3. **Install Dependencies**
 
-npm install wagmi @wagmi/core @web3modal/wagmi viem @tanstack/react-query axios bootstrap fontawesome react-bootstrap react-redux react-router-dom react-simple-timestamp-to-date web3
+# Install Wagmi and related packages
+npm install wagmi @wagmi/core @web3modal/wagmi viem
+
+# Install React Query for data fetching and state management
+npm install @tanstack/react-query
+
+# Install axios for HTTP requests
+npm install axios
+
+# Install Bootstrap for styling
+npm install bootstrap
+
+# Install FontAwesome for icons
+npm install fontawesome
+
+# Install React-Bootstrap for Bootstrap components
+npm install react-bootstrap
+
+# Install Redux for state management
+npm install react-redux
+
+# Install React Router for routing
+npm install react-router-dom
+
+# Install react-simple-timestamp-to-date for timestamp conversion
+npm install react-simple-timestamp-to-date
+
+# Install Web3 for blockchain interactions
+npm install web3
+
 
 ### 3. **Environment Setup**
 
